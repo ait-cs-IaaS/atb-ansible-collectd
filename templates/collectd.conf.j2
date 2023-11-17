@@ -70,7 +70,7 @@ LoadPlugin syslog
 
 <Plugin logfile>
     LogLevel "info"
-    File "/var/log/collectd.log"
+    File "{{ collectd_logdir }}/collectd.log"
     PrintSeverity true
 </Plugin>
 
