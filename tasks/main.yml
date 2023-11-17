@@ -37,7 +37,7 @@
     content: "{{ item.content }}"
     owner: root
     group: root
-  with_items: collectd_config
+  with_items: "{{ collectd_config }}"
   notify: restart collectd
   tags: [config]
 
