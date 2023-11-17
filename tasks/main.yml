@@ -33,7 +33,7 @@
 
 - name: Deploy custom configuration
   ansible.builtin.copy:
-    dest: /etc/collectd/collectd.conf.d/{{item.name}}.conf
+    dest: "/etc/collectd/collectd.conf.d/{{ item.name }}.conf"
     content: "{{ item.content }}"
     owner: root
     group: root
